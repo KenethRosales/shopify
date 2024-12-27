@@ -11,8 +11,9 @@
   "sections": {
     "main": {
       "type": "main-blog",
+      "disabled": true,
       "settings": {
-        "layout": "collage",
+        "layout": "grid",
         "show_image": true,
         "image_height": "medium",
         "show_date": true,
@@ -20,9 +21,49 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_VPzK3B": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4zyNWi": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ shop.metaobjects.music[\"album-1\"].name_of_album.value }}",
+            "heading_size": "h1"
+          }
+        },
+        "button_DezR4t": {
+          "type": "button",
+          "settings": {
+            "button_label": "Stream/ Download",
+            "button_link": "{{ shop.metaobjects.music[\"album-1\"].system.url }}",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4zyNWi",
+        "button_DezR4t"
+      ],
+      "settings": {
+        "image": "{{ shop.metaobjects.music[\"album-1\"].album_image.value }}",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_VPzK3B"
   ]
 }
