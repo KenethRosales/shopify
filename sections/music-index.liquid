@@ -4,6 +4,19 @@
   </li>
 {% endfor %}
 
+{% assign highlights = metafields.custom.music.value %}
+
+<div class="product-highlights">
+  {% for highlight in highlights %}
+    <div class="highlight">
+      <h2>{{ highlight.name_of_album }}</h2>
+      <p>{{ highlight.description }}</p>
+      <img src="{{ highlight.image | img_url: 'medium' }}" alt="{{ highlight.title }}">
+    </div>
+  {% endfor %}
+</div>
+
+
 {% schema %}
   {
     "name": "Music metas",
