@@ -2,7 +2,7 @@
   <li>
     {% assign album_link = metaobjects.album_link %}
     {% for link in album_link %}
-      {{ link.text | link_to: link.url }}
+      {{ link.text }}
     {% endfor %}
   </li>
 {% endfor %}
