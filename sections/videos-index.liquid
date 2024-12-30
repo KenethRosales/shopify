@@ -1,9 +1,6 @@
 {% for metaobject in shop.metaobjects.videos.values %}
   <h2>{{ metaobject.video_title }}</h2>
   <p>
-      <img src="{{ metaobject.album_image | image_url: width: 300 }}" alt="">
-  </p>
-  <p>
     {% assign yt_id = metaobject.video_yt_id %}
     {{ yt_id }}
     {% comment %} 
