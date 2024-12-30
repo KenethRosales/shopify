@@ -11,7 +11,7 @@
     <div class="highlight">
       <h2>{{ highlight.name_of_album }}</h2>
       <p>{{ highlight.description }}</p>
-      <img src="{{ highlight.album_image | img_url: 'medium' }}" alt="text - {{ highlight.album_image | name }}">
+      <img src="{{ highlight.album_image | img_url: 'medium' }}" alt="text - {{ highlight.album_image | title }}">
     </div>
   {% endfor %}
 </div>
