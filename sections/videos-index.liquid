@@ -1,6 +1,25 @@
+{% for metaobject in shop.metaobjects.videos.values %}
+  <h2>{{ metaobject.video_title }}</h2>
+  <p>
+      <img src="{{ metaobject.album_image | image_url: width: 300 }}" alt="">
+  </p>
+  <p>
+    {% assign yt_id = metaobject.video_yt_id %}
+    {{ yt_id }}
+    {% comment %} 
+    {% assign thumb_new = "https://img.youtube.com/vi/'.$yt_id.'/maxresdefault.jpg" %}
+    {% $thumb_new = 'https://img.youtube.com/vi/'.$yt_id.'/maxresdefault.jpg'; %}
+    <a class="link-video" data-fancybox="video-gallery" href="http://youtube.com/watch?v=">
+      <div class="overlay"></div>
+    </a>
+    {% endcomment %} 
+  </p>
+{% endfor %}
+
+
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Music metas",
     "settings": []
   }
 {% endschema %}
