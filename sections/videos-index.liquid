@@ -7,13 +7,13 @@
     {% capture video_url %}http://youtube.com/watch?v={{ yt_id }}{% endcapture %}    
     {{ thumb_video }}
     {{ video_url }}
-    {% comment %} 
-    {% assign thumb_new = "https://img.youtube.com/vi/'.$yt_id.'/maxresdefault.jpg" %}
-    {% $thumb_new = 'https://img.youtube.com/vi/'.$yt_id.'/maxresdefault.jpg'; %}
-    <a class="link-video" data-fancybox="video-gallery" href="http://youtube.com/watch?v=">
+
+    
+    <a class="link-video" data-fancybox="video-gallery" href="{{ video_url }}">
       <div class="overlay"></div>
+      <img class="thumb-video" src="{{ thumb_video }}" />
     </a>
-    {% endcomment %} 
+    
   </p>
 {% endfor %}
 
