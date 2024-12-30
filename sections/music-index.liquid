@@ -1,6 +1,6 @@
 {% for metaobject in shop.metaobjects.music.values %}
   <li>
-    {{ metaobject.name_of_album }}
+    {{ metaobject.music_image | img_tag }}  
   </li>
 {% endfor %}
 
