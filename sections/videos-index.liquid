@@ -4,9 +4,12 @@
     {% assign yt_id = metaobject.video_yt_id %}
     
     {% capture thumb_video %}https://img.youtube.com/vi/{{ yt_id }}/maxresdefault.jpg{% endcapture %}
-    {% capture video_url %}http://youtube.com/watch?v={{ yt_id }}{% endcapture %}    
+    {% capture video_url %}http://youtube.com/watch?v={{ yt_id }}{% endcapture %}  
+
+    {% comment %}
     {{ thumb_video }}
     {{ video_url }}
+    {% endcomment %}
 
     
     <a class="link-video" data-fancybox="video-gallery" href="{{ video_url }}">
