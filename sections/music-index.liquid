@@ -10,8 +10,8 @@
   {% for highlight in highlights %}
     <div class="highlight">
       <h2>{{ highlight.name_of_album }}</h2>
-      <p>{{ highlight.album_link | text }}</p>
-      <img src="{{ highlight.album_image | img_url: 'medium' }}" alt="text - {{ highlight.album_image | title }}">
+      <p>{{ highlight.album_image | img_tag }}</p>
+      <!--<img src="{{ highlight.album_image | img_url: 'medium' }}" alt="text - {{ highlight.album_image | img_tag }}">-->
     </div>
   {% endfor %}
 </div>
