@@ -3,9 +3,10 @@
   <p>
     {% assign yt_id = metaobject.video_yt_id %}
     
-    {% capture my_variable %}https://img.youtube.com/vi/{{ yt_id }}/maxresdefault.jpg{% endcapture %}
-    {% assign thumb_new = "https://img.youtube.com/vi/'{{ yt_id }}'/maxresdefault.jpg" %}
-    {{ my_variable }}
+    {% capture thumb_video %}https://img.youtube.com/vi/{{ yt_id }}/maxresdefault.jpg{% endcapture %}
+    {% capture video_url %}http://youtube.com/watch?v={{ yt_id }}{% endcapture %}    
+    {{ thumb_video }}
+    {{ video_url }}
     {% comment %} 
     {% assign thumb_new = "https://img.youtube.com/vi/'.$yt_id.'/maxresdefault.jpg" %}
     {% $thumb_new = 'https://img.youtube.com/vi/'.$yt_id.'/maxresdefault.jpg'; %}
