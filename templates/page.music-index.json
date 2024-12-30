@@ -11,13 +11,15 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
-      }
+      "settings": {}
+    },
+    "index": {
+      "type": "music-index",
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "index"
   ]
 }
