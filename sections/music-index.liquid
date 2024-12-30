@@ -3,6 +3,9 @@
   <p>
       <img src="{{ metaobject.album_image | image_url: width: 300 }}" alt="">
   </p>
+  <p>
+      {{ metaobject.album_link.handle }} 
+  </p>
 {% endfor %}
 
 
