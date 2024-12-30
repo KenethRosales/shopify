@@ -1,9 +1,6 @@
 {% for metaobject in shop.metaobjects.music.values %}
   <li>
-    {% assign album_link = metaobjects.album_link %}
-    {% for link in album_link %}
-      {{ link.text }}
-    {% endfor %}
+    {{ metaobject.music_link | link_to: metaobject.system.url }}
   </li>
 {% endfor %}
 
