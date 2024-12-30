@@ -10,7 +10,7 @@
   {% for highlight in highlights %}
     <div class="highlight">
       <h2>{{ highlight.name_of_album }}</h2>
-      <p></p>
+      <p>{{ shop.metaobjects['music']['music_link'].text }}</p>
       <img src="{{ highlight.album_image | image_url: width: 300 }}" alt="">
     </div>
   {% endfor %}
