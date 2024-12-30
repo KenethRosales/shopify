@@ -1,6 +1,6 @@
 {% for metaobject in shop.metaobjects.music.values %}
   <li>
-      <img src="{{ metaobject.music_image | img_url: 'medium' }}" alt="{{ metaobject.music_image }}">
+      <img src="{{ metaobject.music_image | img_url }}" alt="{{ metaobject.music_image }}">
   </li>
 {% endfor %}
 
