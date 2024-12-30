@@ -3,6 +3,8 @@
   <p>
     {% assign yt_id = metaobject.video_yt_id %}
     {{ yt_id }}
+    {% assign thumb_new = "https://img.youtube.com/vi/'{{ yt_id }}'/maxresdefault.jpg" %}
+    {{ thumb_new }}
     {% comment %} 
     {% assign thumb_new = "https://img.youtube.com/vi/'.$yt_id.'/maxresdefault.jpg" %}
     {% $thumb_new = 'https://img.youtube.com/vi/'.$yt_id.'/maxresdefault.jpg'; %}
