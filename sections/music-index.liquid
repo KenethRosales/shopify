@@ -1,6 +1,6 @@
 {% for metaobject in shop.metaobjects.music.values %}
   <li>
-    {{ metaobject.music_link.value[0] }}
+    {{ metaobject.music_link.value.text }}
   </li>
 {% endfor %}
 
