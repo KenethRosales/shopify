@@ -1,15 +1,8 @@
-{% assign highlights = product.metafields.custom.music.value %}
-
-
-<div class="product-highlights">
-  {% for highlight in highlights %}
-    <div class="highlight">
-      <h2>{{ highlight.name }}</h2>
-      <p>{{ highlight.description }}</p>
-      <img src="{{ highlight.image | img_url: 'medium' }}" alt="{{ highlight.title }}">
-    </div>
-  {% endfor %}
-</div>
+{% for metaobject in shop.metaobjects.music.values %}
+  <li>
+    {{ metaobject.album_link | link_to: metaobject.system.url }}
+  </li>
+{% endfor %}
 
 {% schema %}
   {
