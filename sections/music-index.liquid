@@ -4,6 +4,11 @@
   </li>
 {% endfor %}
 
+{% assign image_list = shop.metaobjects.music.values %}
+{% for image in image_list %}
+  <img src="{{ image | image_url: '1024x1024' }}" alt="Feature Image">
+{% endfor %}
+
 {% schema %}
   {
     "name": "Music metas",
