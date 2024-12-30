@@ -1,6 +1,12 @@
+{% for metaobject in shop.metaobjects.music.values %}
+  <li>
+    {{ metaobject.album_link | link_to: metaobject.system.url }}
+  </li>
+{% endfor %}
+
 {% schema %}
   {
-    "name": "Section name",
+    "name": "Music metas",
     "settings": []
   }
 {% endschema %}
