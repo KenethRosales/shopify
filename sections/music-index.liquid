@@ -1,6 +1,7 @@
 {% for metaobject in shop.metaobjects.music.values %}
   <h2>{{ metaobject.name_of_album }}</h2>
   <p>
+      {{ metaobject.album_image.value }}
       <img src="{{ metaobject.album_image | image_url: width: 300 }}" alt="">
   </p>
   <p>
