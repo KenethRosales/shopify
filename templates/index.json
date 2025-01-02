@@ -55,20 +55,9 @@
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
-    },
-    "page_EWpXf4": {
-      "type": "page",
-      "settings": {
-        "page": "music",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
-    "image_banner",
-    "page_EWpXf4"
+    "image_banner"
   ]
 }
