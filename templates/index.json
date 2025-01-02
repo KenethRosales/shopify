@@ -59,10 +59,15 @@
     "Music": {
       "type": "music-index",
       "settings": {}
+    },
+    "Videos": {
+      "type": "videos-index",
+      "settings": {}
     }
   },
   "order": [
     "image_banner",
-    "Music"
+    "Music",
+    "Videos"
   ]
 }
