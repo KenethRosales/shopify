@@ -18,7 +18,10 @@
     },
     "index": {
       "type": "music-index",
-      "settings": {}
+      "settings": {
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
